@@ -13,42 +13,43 @@
 <body>
     <h1>Dogs Album</h1>
     <div class="wrapper">
-        <a href="img0.jpg" target="_blank">
-            <img id="img0" src="" alt="dogs-404" width="200" height="200">
-        </a>
-        <a href="img1.jpg" target="_blank">
-            <img id="img1" src="" alt="dogs-404" width="200" height="200">
-        </a>
-        <a href="img2.jpg" target="_blank">
-            <img id="img2" src="" alt="dogs-404" width="200" height="200">
-        </a>
-        <a href="img3.jpg" target="_blank">
-            <img id="img3" src="" alt="dogs-404" width="200" height="200">
-        </a>
-        <a href="img4.jpg" target="_blank">
-            <img id="img4" src="" alt="dogs-404" width="200" height="200">
-        </a>
-        <a href="img5.jpg" target="_blank">
-            <img id="img5" src="" alt="dogs-404" width="200" height="200">
-        </a>
-        <a href="img6.jpg" target="_blank">
-            <img id="img6" src="" alt="dogs-404" width="200" height="200">
-        </a>
-        <a href="img7.jpg" target="_blank">
-            <img id="img7" src="" alt="dogs-404" width="200" height="200">
-        </a>
-        <a href="img8.jpg" target="_blank">
-            <img id="img8" src="" alt="dogs-404" width="200" height="200">
-        </a>
+        <p id="imgData0">
+
+        </p>
+        <p id="imgData1">
+
+        </p>
+        <p id="imgData2">
+
+        </p>
+        <p id="imgData3">
+
+        </p>
+        <p id="imgData4">
+
+        </p>
+        <p id="imgData5">
+
+        </p>
+        <p id="imgData6">
+
+        </p>
+        <p id="imgData7">
+
+        </p>
+        <p id="imgData8">
+
+        </p>
     </div>
 
 
 </body>
 <script type="text/javascript">
     for (let i = 0; i < 9; i++) {
-        document.getElementById(`img${i}`).src = `img${i}.jpg`
+        document.getElementById(`imgData${i}`).innerHTML = `<a href="img${i}.jpg" target="_blank">
+            <img  src=img${i}.jpg alt="dogs-404" width="200" height="200">
+        </a>`
     }
 </script>
-
 
 </html>
